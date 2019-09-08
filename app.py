@@ -4,6 +4,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+v='ww'
 conn = psycopg2.connect(database = "postgres", user = "postgres", password = "pucit123", host = "127.0.0.1", port = "5432")
 cur = conn.cursor()
 cur.execute("SELECT  * from employees ")
